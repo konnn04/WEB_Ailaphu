@@ -6,7 +6,7 @@ const bgGame = document.getElementById("bgGame")
 
 const progLoadHome = bufferLoadHome.querySelector("progress")
 const imgLoadHome = bufferLoadHome.querySelector("img")
-var introMusic = new Audio("/asset/audio/intro/On_the_Hot_Seat.mp3")
+var introMusic = new Audio("/Ailaphu/asset/audio/intro/On_the_Hot_Seat.mp3")
 
 console.log(bufferLoadHome)
 var firstClickIntro = true
@@ -14,7 +14,7 @@ var firstClickIntro = true
 startHome.onclick = () => {
     introMusic.pause()
     bgGame.style.display = "block"
-    introMusic = new Audio("/asset/audio/intro/letsplay.ogg")
+    introMusic = new Audio("/Ailaphu/asset/audio/intro/letsplay.ogg")
     introMusic.play()
     introMusic.volume = 0.5
     menuHome.style.animation = "zoomLoad .8s ease-in forwards"
