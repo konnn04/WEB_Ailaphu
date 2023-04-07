@@ -10,7 +10,7 @@ var ezAsked = []
 const abc = ["A. ", "B. ", "C. ", "D. "]
 
 const createQ = async() => {
-    await fetch("/asset/data.json").then(res => res.json()).then(data => {
+    await fetch("/Ailaphu/asset/data.json").then(res => res.json()).then(data => {
         if (Level <= 5) {
             ranTemp = []
             creEz(data["ez"])
