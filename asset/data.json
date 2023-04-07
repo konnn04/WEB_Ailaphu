@@ -1,0 +1,9 @@
+{
+    "ez": [{
+        "Q": "1+2*3=?",
+        "A": ["7", "6", "8", "9"]
+    }, {
+        "Q": "Tác phẩm \"Tắt đèn\" sáng tác bởi ai?",
+        "A": ["Ngô Tất Tố", "Nguyễn Du", "Tô Hoài", "Nguyễn Khuyến"]
+    }]
+}
