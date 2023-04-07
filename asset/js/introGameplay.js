@@ -2,7 +2,7 @@ const itemScore = document.getElementsByClassName("itemScore")
 const itemHelp = document.getElementsByClassName("helpItem")
 const introSence = document.getElementById("introGamePlay")
 
-const linkVocal = ["/asset/audio/intro/vocal_odayseco.mp3", "/asset/audio/intro/tucauso10.mp3", "/asset/audio/intro/trogiup1.mp3", "/asset/audio/intro/trogiup4.mp3"]
+const linkVocal = ["/Ailaphu/asset/audio/intro/vocal_odayseco.mp3", "/Ailaphu/asset/audio/intro/tucauso10.mp3", "/Ailaphu/asset/audio/intro/trogiup1.mp3", "/Ailaphu/asset/audio/intro/trogiup4.mp3"]
 bgGame.style.display = "block"
 
 
@@ -47,10 +47,10 @@ var introGame = function() {
     setTimeout(() => {
         setTimeout(() => {
             var i = 0
-            helpSfx1 = new Audio("/asset/audio/intro/50-50.mp3")
-            helpSfx2 = new Audio("/asset/audio/intro/PAF.mp3")
-            helpSfx3 = new Audio("/asset/audio/intro/ATA.mp3")
-            helpSfx4 = new Audio("/asset/audio/intro/ATA.mp3")
+            helpSfx1 = new Audio("/Ailaphu/asset/audio/intro/50-50.mp3")
+            helpSfx2 = new Audio("/Ailaphu/asset/audio/intro/PAF.mp3")
+            helpSfx3 = new Audio("/Ailaphu/asset/audio/intro/ATA.mp3")
+            helpSfx4 = new Audio("/Ailaphu/asset/audio/intro/ATA.mp3")
             var h1 = false;
             var h2 = false;
             var h3 = false;
