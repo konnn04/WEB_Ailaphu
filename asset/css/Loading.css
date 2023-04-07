@@ -11,7 +11,7 @@ body {
 
 #full-loading {
     transition: all .3s linear;
-    background-image: url(../img/bg.jpg);
+    background-image: url(/Ailaphu/asset/img/bg.jpg);
     width: 100vw;
     height: 100vh;
     position: absolute;
@@ -95,7 +95,7 @@ body {
 #bgGame {
     display: none;
     background-position: center;
-    background-image: url("/asset/img/bg.webp");
+    background-image: url("/Ailaphu/asset/img/bg.webp");
     background-size: cover;
     position: absolute;
     top: 0;
@@ -120,5 +120,5 @@ body {
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
-    background-image: url("image.png");
+    background-image: url("/Ailaphu/asset/img/image.png");
 }
