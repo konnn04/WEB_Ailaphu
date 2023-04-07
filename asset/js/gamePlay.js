@@ -8,10 +8,10 @@ const lockQ = document.getElementById("lockQ")
 const timeRemain = document.getElementById("timeQ")
 const numQ = document.getElementById("numQ")
 const imgPlayer = document.getElementById("player").querySelector("img")
-var musicGameplay = new Audio("/asset/audio/ingame/1-5.ogg")
-const correct15 = new Audio("/asset/audio/ingame/1-5Correct.ogg")
-const wrong15 = new Audio("/asset/audio/ingame/1-5Wrong.ogg")
-const pathImgPlayer = ["/asset/img/player/playerCorrect.png", "/asset/img/player/playerThink.png", "/asset/img/player/playerWrong.png"]
+var musicGameplay = new Audio("/Ailaphu/asset/audio/ingame/1-5.ogg")
+const correct15 = new Audio("/Ailaphu/asset/audio/ingame/1-5Correct.ogg")
+const wrong15 = new Audio("/Ailaphu/asset/audio/ingame/1-5Wrong.ogg")
+const pathImgPlayer = ["/Ailaphu/asset/img/player/playerCorrect.png", "/Ailaphu/asset/img/player/playerThink.png", "/Ailaphu/asset/img/player/playerWrong.png"]
 musicGameplay.volume = 0.2
 gameplaySence.style.display = 'block';
 //BIẾN DATA NGƯỜI CHƠI
@@ -68,9 +68,9 @@ var end15 = () => {
     itemScore[Level - 2].classList.add("lightItem")
     musicGameplay.pause()
     gameplaySence.style.display = 'none';
-    musicGameplay = new Audio("/asset/audio/ingame/end15.ogg")
+    musicGameplay = new Audio("/Ailaphu/asset/audio/ingame/end15.ogg")
     musicGameplay.play()
-    bgGameIngame.style.backgroundImage = `url("/asset/img/bg.webp")`
+    bgGameIngame.style.backgroundImage = `url("/Ailaphu/asset/img/bg.webp")`
 
 }
 
@@ -83,7 +83,7 @@ const playGameplay15 = () => {
     clock()
     createQ()
     musicGameplay.play()
-    bgGameIngame.style.backgroundImage = `url("/asset/img/bg-gameplay.png")`
+    bgGameIngame.style.backgroundImage = `url("/Ailaphu/asset/img/bg-gameplay.png")`
     for (let i = 0; i < helpItemIngame.length; i++) {
         helpItemIngame[i].onclick = () => {
 
