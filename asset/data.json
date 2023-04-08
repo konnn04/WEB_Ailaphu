@@ -5,5 +5,11 @@
     }, {
         "Q": "Tác phẩm \"Tắt đèn\" sáng tác bởi ai?",
         "A": ["Ngô Tất Tố", "Nguyễn Du", "Tô Hoài", "Nguyễn Khuyến"]
+    },{
+        "Q": "Thiên Phú đẹp zai thích ăn gì",
+        "A": ["Súp cua", "Bún luộc", "Phở", "Chuối"]
+    },{
+        "Q": "Đôi giày biết ăn cá sống được gọi là gì?",
+        "A": ["Shoeshi", "ShoeBi", "Cù lao xác giày", "Khum biết"]
     }]
 }
