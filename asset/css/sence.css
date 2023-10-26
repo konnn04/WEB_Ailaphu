@@ -1,0 +1,212 @@
+#sence1{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+#sence1 > .center {
+    max-width: 300px;
+    width: 100%;
+}
+
+#sence1 > #load{
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    color: aliceblue;
+}
+
+#sence1 > #load > div:nth-child(1) {
+
+}
+
+#sence1 > #load > div:nth-child(2) {
+    text-align: right;
+}
+
+#sence1 > #load > div:nth-child(3) {
+    grid-column: 1 /span 2;
+    border: 2px solid #fff;
+    height: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+#sence1 > #load > div:nth-child(3) > div {
+    width: 67%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+/* Gameplay */
+
+#gameplay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#gameplay .question-box{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 2rem;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#gameplay .question-box .flex-right img{
+    transform: rotate(180deg);
+}
+
+#gameplay .question-box .flex{
+    display: flex;
+    justify-content: center;
+}
+
+#gameplay .question-box .flex-right,
+#gameplay .question-box .flex-left{
+    margin-top: 10px;
+    display: flex;
+    width: 50%;
+    justify-content: start;
+}
+
+#gameplay .question-box .flex-left {
+    justify-content: end;
+}
+
+#gameplay .question-box .img{
+    height: 100%;
+    aspect-ratio: 9;
+}
+
+#gameplay .question-box .flex .img{
+    aspect-ratio: 18;
+}
+
+#gameplay .question-box div {
+    position: relative;
+}
+
+#gameplay .question-box div .question-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameplay .question-box div .answer-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#gameplay .question-box .flex-left .answer-text{
+    justify-content: end;
+}
+
+#gameplay .question-box .flex-right .answer-text{
+    justify-content: start;
+} 
+
+#gameplay .question-box div .answer-text p{
+    width: 64vh;
+    padding: 0 5vh;
+}
+
+#gameplay .question-box div .question-text p{
+    margin: auto;
+    width: 115vh;
+}
+
+@media screen and (max-width : 120vh) {
+    #gameplay .question-box{
+        aspect-ratio: 778/238;
+        height: unset;
+        width: 100%;
+        font-size: .8rem;
+        
+    }
+    #gameplay .question-box div .question-text p{
+        margin: auto;
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width : 90vh) {
+    #gameplay .question-box{        
+        font-size: .6rem;        
+    }
+}
+
+@media screen and (max-width : 63vh) {
+    #gameplay .question-box div .answer-text{
+        width: 100%;
+        justify-content: end!important;
+    }
+
+    #gameplay .question-box div .answer-text p{
+        width: 36vh;
+        padding:0 2vh;
+    }
+
+    #gameplay .question-box .flex-right img{
+        transform: rotate(0);
+    }
+
+    #gameplay .question-box .flex-right {
+        justify-content: end;
+    }
+
+    #gameplay .question-box{        
+        font-size: .9rem;        
+    }
+
+    #gameplay .question-box div .question-text p{
+        margin: auto;
+        width: 95vw;
+    }
+
+    #gameplay .question-box{
+        height: 45vh;
+        display: block;
+    }
+
+    #gameplay .question-box .flex-right,
+    #gameplay .question-box .flex-left,
+    #gameplay .question-box .flex{
+        width: 100%;
+        height: 16%;
+    }
+    
+    #gameplay .question-box .flex{
+        height: 28%;
+        
+    }
+}
